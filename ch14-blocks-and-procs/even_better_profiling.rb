@@ -1,5 +1,4 @@
 def profile block_description, &block
-
   switch = false
 
   if switch
@@ -10,6 +9,5 @@ def profile block_description, &block
   else
     block.call
   end
-
 end
 

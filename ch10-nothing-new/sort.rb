@@ -3,7 +3,6 @@ def sort arr
 end
 
 def recursive_sort unsorted_array, sorted_array
-
   a = 0
   b = 0
 
@@ -22,21 +21,8 @@ def recursive_sort unsorted_array, sorted_array
   unsorted_array.delete_at(a)
 
   if unsorted_array.length > 0
-
     recursive_sort(unsorted_array, sorted_array)
   end
 
   sorted_array
-
 end
-
-# The above method will permanetly alter the caller.
-
-
-
-
-
-
-
-
-

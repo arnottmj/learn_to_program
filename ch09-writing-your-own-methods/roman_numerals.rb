@@ -1,5 +1,4 @@
 def roman_numeral num
-
   if (num < 1)
     return "Enter an integer greater than or equal to 1"
   end
@@ -12,7 +11,6 @@ def roman_numeral num
   counter = 0
 
   while left > 0
-
     write = left / divider[counter]
     left = num % divider[counter]
 
@@ -29,10 +27,8 @@ def roman_numeral num
     end
 
     counter = counter + 1
-
   end
 
   return numString
-
 end
 

@@ -37,6 +37,7 @@ class OrangeTree
   def time_passing
     @orange_count = 0
     @height = @height + 0.5
+
     if @alive and (@height < 10)
       if @height < 2
         puts "You're orange tree is now #{@height}m tall, but it is still"
@@ -47,15 +48,15 @@ class OrangeTree
         puts "#{@orange_count} oranges!!"
       end
     end
+
     if @alive && (@height > 10)
       @alive = false
     end
+
     if !@alive
       "You've plant is no longer alive"
     end
-
   end
-
 end
 
 

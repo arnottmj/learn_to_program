@@ -1,5 +1,4 @@
 def music_shuffle filenames
-
   split_names = []
   x = ""
   shuf = []
@@ -16,7 +15,6 @@ def music_shuffle filenames
   split_names.delete(x)
 
   while split_names.length > 0
-
     x = split_names.sample
 
     if x[-2] != shuf[(counter-1),-2]
@@ -32,12 +30,12 @@ def music_shuffle filenames
     else
       flag = flag + 1
     end
-
   end
 
   shuf.each do |second|
     final_shuf.push(second.join("/"))
   end
+  
   final_shuf
 end
 

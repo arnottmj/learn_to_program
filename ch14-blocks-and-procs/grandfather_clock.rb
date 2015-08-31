@@ -6,7 +6,6 @@ def grandfather_clock &block
   end
 
   count.times(&block)
-
 end
 
 grandfather_clock do

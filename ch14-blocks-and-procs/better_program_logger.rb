@@ -24,6 +24,5 @@ log 'outer block' do
   end
 
   'Back up!'
-
 end
 

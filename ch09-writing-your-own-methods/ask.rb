@@ -3,19 +3,16 @@ def ask question
     puts question
     reply = gets.chomp.downcase
 
-    if (reply == 'yes' || reply == 'no')
+    if reply == 'yes' || reply == 'no'
       if reply == 'yes'
-        return true #replaced with return
+        return true 
       else
-        return false #replaced with return
+        return false 
       end
-      #removed break command since now using return statements
     else
       puts 'Please answer "yes" or "no".'
     end
   end
-
-  #removed statement here since now using return statements
 end
 
 
